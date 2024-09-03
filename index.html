@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="calculator">
+     <nav>
+          <div class="logo">calc</div>
+          <div class="theme">
+               <h1>THEME</h1>
+               <div class="dark">
+                    <div class="box">
+                         <div class="span1">1</div>
+                         <div class="span2">2</div>
+                         <div class="span3">3</div>
+                    </div>
+                    <div class="button">
+                         <div class="cirl"></div>
+                    </div>
+               </div>
+          </div>
+
+     </nav>
+
+     <div class="input" id="ekran">
+          
+     </div>
+
+     <div class="buttons">
+          <div>
+               <button onclick="qosh('7')">7</button>
+               <button onclick="qosh('8')">8</button>
+               <button onclick="qosh('9')">9</button>
+               <button class="del qosh" onclick="ochir()">DEL</button>
+          </div>
+          <div>
+               <button onclick="qosh('4')">4</button>
+               <button onclick="qosh('5')">5</button>
+               <button onclick="qosh('6')">6</button>
+               <button class="plus" onclick="amal('+')">+</button>
+          </div>
+          <div>
+               <button onclick="qosh('1')">1</button>
+               <button onclick="qosh('2')">2</button>
+               <button onclick="qosh('3')">3</button>
+               <button class="ayirma" onclick="amal('-')">-</button>
+          </div>
+          <div>
+               <button onclick="qosh('.')">.</button>
+               <button onclick="qosh('0')">0</button>
+               <button onclick="amal('/')">/</button>
+               <button class="kopaytma" onclick="amal('*')">x</button>
+          </div>
+          <div>
+               <button class="reset" onclick="tozala()">RESET</button>
+               <button class="teng" onclick="hisoblash()">=</button>
+          </div>
+        
+         
+          
+     
+
+     </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
